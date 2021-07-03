@@ -23,6 +23,7 @@ h3 {
 #text-field {
     width: 290px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #wig {
@@ -30,6 +31,7 @@ h3 {
     height: 30px;
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 #ojisan {
