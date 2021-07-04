@@ -14,7 +14,55 @@ h3 {
 
 #field {
     width: 290px;
+    height: 290px;body {
+    color: #555;
+    background-color:mistyrose;
+}
+
+.container {
+    width: 360px;
+    height: 360px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#field {
+    width: 290px;
     height: 290px;
+    margin: 0 auto;
+    position: relative;
+    background-color: lightsteelblue;
+}
+
+#text-field {
+    width: 290px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#wig {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#uni {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+}
+
+#ojisan {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
     margin: 0 auto;
     position: relative;
     background-color: lightsteelblue;
