@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>fallingWigs</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>fallingWigs</title>
 </head>
 <body>
-    <div class="container">
-        <h3>カツラを拾え！</h3>
-        <div id="field">
-            <img id="wig" src="wig.png" alt="wig">
-            <img id="uni" src="uni.png" alt="wig">
-            <img id="ojisan" src="salaryman_ojisan.png" alt="ojisan">
-        </div>
-        <div id="text-field">
-            <p>制限時間：<span>100</span>秒</p>
-            <p>カツラ獲得ポイント：<span id="pointArea">0</span>Pt</p>
-            <p>おじさんの体力：<span>100</span>Pt</p>
-        </div>
+  <div class="container">
+
+    <div id="modal">
+      <h3>終了!</h3>
+      <p>カツラ獲得ポイント<br><span id="resultArea">0</span>Pt</p>
     </div>
+    
+    <h3>カツラを拾え！</h3>
+    <p id="description">← → キーで移動</p>
+    <div id="field">
+      <img id="wig" src="wig.png" alt="wig">
+      <img id="ojisan" src="salaryman_ojisan.png" alt="ojisan">
+      <p id="effect">ゲット!</p>
+    </div>
+    <div id="text-field">
+      <p>制限時間：<span id="timer"></span>秒</p>
+      <p>カツラ獲得ポイント：<span id="pointArea">0</span>Pt</p>
+    </div>
+  </div>
 <script src="script.js"></script>
-</body><!DOCTYPE html>
+</body>
