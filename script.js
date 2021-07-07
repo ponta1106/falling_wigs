@@ -5,19 +5,20 @@ const pointArea = document.getElementById('pointArea');
 const effect = document.getElementById('effect');
 const modal = document.getElementById('modal');
 const resultArea = document.getElementById('resultArea');
+let wigLeft = Math.floor(Math.random() * 230)
+wig.style.left = wigLeft + 'px';
 
 let stopCountUp;
 let stopCountDown;
 
 let y = 0;
-let defaultTime = 10;
+let defaultTime = 30;
 let point = 0;
-let ojisanLeft = 0;
-
+let ojisanLeft = 120;
 const countUp = ()=> {
 
 	let wigPosition = wig.getBoundingClientRect();
-	let wigLeft = wigPosition.left;
+	wigLeft = wigPosition.left;
 	let wigRight = wigPosition.right;
 	let wigBottom = wigPosition.bottom;
 	let ojisanPosition = ojisan.getBoundingClientRect();
