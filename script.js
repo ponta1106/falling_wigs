@@ -12,7 +12,7 @@ let stopCountUp;
 let stopCountDown;
 
 let y = 0;
-let defaultTime = 1;
+let defaultTime = 30;
 let point = 0;
 let ojisanLeft = 120;
 const countUp = ()=> {
