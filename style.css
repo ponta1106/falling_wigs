@@ -46,6 +46,7 @@ button {
   outline: none;
   color: #fff;
   border-radius: 10px;
+  touch-action: manipulation;
   background-color: palevioletred;
 }
 
