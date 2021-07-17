@@ -18,14 +18,14 @@ let defaultTime = 30;
 let point = 0;
 let ojisanLeft = 120;
 
-let lastTouch = 0;
-document.addEventListener('touchend', event => {
-  const now = window.performance.now();
-  if (now - lastTouch <= 500) {
-    event.preventDefault();
-  }
-  lastTouch = now;
-}, true);
+var lastTouchEnd = 0;
+document.addEventListener('touchend', function (event) {
+    var now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);
 
 const countUp = ()=> {
 
