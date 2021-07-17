@@ -74,7 +74,7 @@ const countUp = ()=> {
 
 countDown();
 
-left.addEventListener('mousedown', ()=> {
+left.addEventListener('click', ()=> {
 	if(!ojisan.classList.contains('turn')) {
 		ojisan.classList.add('turn');
 	};
@@ -82,7 +82,7 @@ left.addEventListener('mousedown', ()=> {
 	ojisan.style.left = ojisanLeft + 'px';
 })
 
-right.addEventListener('mousedown', ()=> {
+right.addEventListener('click', ()=> {
 	if(ojisan.classList.contains('turn')) {
 		ojisan.classList.remove('turn');
 	};
