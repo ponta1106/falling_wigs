@@ -67,7 +67,7 @@ const countUp = ()=> {
 		if(defaultTime < 0){
 			clearTimeout(stopCountUp);
 			clearTimeout(stopCountDown);
-			modal.style.top = 60 + 'px';
+			modal.style.top = 65 + 'px';
 			resultArea.textContent = point;
 		}
 	}
