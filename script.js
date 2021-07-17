@@ -5,6 +5,8 @@ const pointArea = document.getElementById('pointArea');
 const effect = document.getElementById('effect');
 const modal = document.getElementById('modal');
 const resultArea = document.getElementById('resultArea');
+const left = document.getElementById('left');
+const right = document.getElementById('right');
 let wigLeft = Math.floor(Math.random() * 230)
 wig.style.left = wigLeft + 'px';
 
@@ -32,7 +34,6 @@ const countUp = ()=> {
 		wigRight > ojisanLeft &&
 		wigLeft < ojisanRight){
 			point += 10;
-			pointArea.textContent = point;
 			effect.style.display = 'block';
 			y = 0;
 			wigLeft = Math.floor(Math.random() * 230)
@@ -65,31 +66,25 @@ const countUp = ()=> {
 		if(defaultTime < 0){
 			clearTimeout(stopCountUp);
 			clearTimeout(stopCountDown);
-			modal.style.top = 100 + 'px';
+			modal.style.top = 60 + 'px';
 			resultArea.textContent = point;
 		}
 	}
 
 countDown();
 
-addEventListener( "keydown", keydownfunc );
+left.addEventListener('mousedown', ()=> {
+	if(!ojisan.classList.contains('turn')) {
+		ojisan.classList.add('turn');
+	};
+	ojisanLeft -= 20;
+	ojisan.style.left = ojisanLeft + 'px';
+})
 
-function keydownfunc(e) {
-	
-	if(e.keyCode === 37){
-		if(!ojisan.classList.contains('turn')) {
-			ojisan.classList.add('turn');
-		};
-		ojisanLeft -= 10;
-		ojisan.style.left = ojisanLeft + 'px';
+right.addEventListener('mousedown', ()=> {
+	if(ojisan.classList.contains('turn')) {
+		ojisan.classList.remove('turn');
 	};
-	
-	if(e.keyCode === 39){
-		if(ojisan.classList.contains('turn')) {
-			ojisan.classList.remove('turn');
-		};
-		ojisanLeft += 10;
-		ojisan.style.left = ojisanLeft + 'px';
-	};
-	
-}
+	ojisanLeft += 20;
+	ojisan.style.left = ojisanLeft + 'px';
+})

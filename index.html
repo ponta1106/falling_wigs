@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="container">
+
     <div id="modal">
       <h3>終了!</h3>
       <p>カツラ獲得ポイント<br><span id="resultArea">0</span>Pt</p>
@@ -16,16 +17,22 @@
     </div>
   
     <h3>カツラを拾え！</h3>
-    <p id="description">← → キーで移動</p>
+
     <div id="field">
       <img id="wig" src="wig.png" alt="wig">
       <img id="ojisan" src="salaryman_ojisan.png" alt="ojisan">
       <p id="effect">ゲット!</p>
     </div>
-    <div id="text-field">
-      <p>制限時間：<span id="timer"></span>秒</p>
-      <p>カツラ獲得ポイント：<span id="pointArea">0</span>Pt</p>
+
+    <div id="controller">
+      <button id="left">←左へ移動</button>
+      <button id="right">右へ移動→</button>
     </div>
+
+    <div id="text-field">
+      <p>のこりじかん：<span id="timer"></span>秒</p>
+    </div>
+
   </div>
 <script src="script.js"></script>
 </body>
